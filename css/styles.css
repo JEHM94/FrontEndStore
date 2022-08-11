@@ -6,5 +6,106 @@
     --white: #FFF;
     --dark: #000;
 
-    -mainFont: 'Cherry Cream Soda', cursive;
+    --mainFont: 'Cherry Cream Soda', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Globals */
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--secondary);
+    font-family: var(--mainFont);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primaryDark);
+    padding: .5rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text{
+    font-family: var(--mainFont);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+.navigation {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation__link {
+    font-family: var(--mainFont);
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.navigation__link-active,
+.navigation__link:hover {
+    color: var(--secondary);
 }
