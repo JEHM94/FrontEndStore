@@ -1,0 +1,10 @@
+:root {
+    --primary: #9C27B0;
+    --primaryDark: #89119D;
+    --secondary: #FFCE00;
+    --secondaryDark: rgb(233, 287, 2);
+    --white: #FFF;
+    --dark: #000;
+
+    -mainFont: 'Cherry Cream Soda', cursive;
+}
