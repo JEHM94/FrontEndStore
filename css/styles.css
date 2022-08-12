@@ -2,7 +2,7 @@
     --primary: #9C27B0;
     --primaryDark: #89119D;
     --secondary: #FFCE00;
-    --secondaryDark: rgb(233, 287, 2);
+    --secondaryDark: rgb(233, 187, 2);
     --white: #FFF;
     --dark: #000;
 
@@ -39,7 +39,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -137,10 +137,6 @@ h3 {
     padding: 1rem;
 }
 
-.product__img {
-    width: 100%;
-}
-
 .product__name {
     font-size: 2.8rem;
 }
@@ -200,7 +196,6 @@ h3 {
 
 .about__img {
     grid-row: 1/2;
-    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -226,10 +221,50 @@ h3 {
     text-align: center;
 }
 
-.block__img {
-    width: 100%;
-}
-
 .block__tittle {
     margin: 0;
+}
+
+/* Product site */
+@media (min-width: 768px) {
+    .tshirt {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form__field {
+    border: 1rem solid var(--primaryDark);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.form__submit {
+    background-color: var(--secondary);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--mainFont);
+    padding: 2rem;
+    grid-column: 1/3;
+}
+
+@media (min-width: 768px) {
+    .form__submit {
+        transition: background-color .3 ease;
+    }
+
+    .form__submit:hover {
+        cursor: pointer;
+        background-color: var(--secondaryDark);
+    }
 }
